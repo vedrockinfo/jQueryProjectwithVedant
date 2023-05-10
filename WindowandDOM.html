@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="mere">Mujhe</div>
+    </div>
+    <script>
+      jQuery(document).ready(function () {
+        // Before Element in jQuery
+        jQuery(".parent").before('<div class="mkl">JAA Lorem Ipsum</div>');
+        // After Element in jQuery
+        jQuery(".parent").after('<div class="mkl">JAA Lorem Ipsum</div>');
+        // Append Element
+        jQuery(".parent").append('<div class="newElement">I Love You</div>');
+        // Prepend Element
+        jQuery(".parent").prepend(
+          '<div class="mahamana">Mahamana Express</div>'
+        );
+      });
+    </script>
+  </body>
+</html>

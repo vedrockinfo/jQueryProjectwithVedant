@@ -10,5 +10,128 @@
     <section class="main">
       <h1>jQuery Learning With Live Examples</h1>
     </section>
+    <!-- selecting element  -->
+    <ul class="listing">
+      <li>Lorem One</li>
+      <li>Lorem Two</li>
+    </ul>
+    <br />
+    <ul>
+      <li>ElementOne</li>
+      <li>Element Two</li>
+    </ul>
+    <br />
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+      iure architecto non quos error consequuntur expedita consectetur eius
+      temporibus ut ullam quis illo reprehenderit, iusto tempore harum
+      cupiditate officia a.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+      iure architecto non quos error consequuntur expedita consectetur eius
+      temporibus ut ullam quis illo reprehenderit, iusto tempore harum
+      cupiditate officia a.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus
+      iure architecto non quos error consequuntur expedita consectetur eius
+      temporibus ut ullam quis illo reprehenderit, iusto tempore harum
+      cupiditate officia a.
+    </p>
+    <form action="">
+      <input type="text" placeholder="Input" />
+      <input type="password" placeholder="Input" />
+    </form>
+
+    <!-- Selecting Children -->
+    <div class="extract">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga ratione
+        perspiciatis suscipit quos pariatur quisquam nihil eaque eveniet
+        architecto nisi nulla, est, doloremque aut? Temporibus facere dolore
+        ipsum. Tenetur, maiores!
+      </p>
+      <p>
+        Est, suscipit veritatis ullam corporis laboriosam, quae alias explicabo
+        voluptate earum consequatur ratione beatae? Quisquam accusantium
+        similique velit tenetur dolores, repellat sequi a doloribus alias
+        consectetur nisi. Reprehenderit, totam iure.
+      </p>
+      <p>
+        Culpa est corrupti officia blanditiis dolor ullam eos porro aperiam fuga
+        eaque alias aut amet quos odio accusamus tempora, ipsam laudantium qui
+        fugit laborum nostrum inventore. At molestiae voluptatibus tempore?
+      </p>
+    </div>
+
+    <!-- Finding Elements  -->
+
+    <div class="parent">
+      <ul>
+        <li>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
+          laboriosam magnam facere veritatis temporibus error earum repellendus
+          rem tempora sed sapiente ut nulla est vero nemo, quam ea id sequi!
+        </li>
+        <li>
+          Minus beatae, dolor nam illo nisi incidunt eius ipsum soluta deleniti
+          dolorem accusamus voluptatibus assumenda corrupti officia consequuntur
+          harum dolore qui sapiente maiores? At in reprehenderit labore, saepe
+          commodi sint?
+        </li>
+      </ul>
+      <p>Siddhant</p>
+      <span>Vedant</span>
+      <strong>Delhi</strong>
+      <p>Aminabad</p>
+      <span>Chitiya</span>
+      <blockquote>Alvida</blockquote>
+    </div>
+    <div class="wrapper">
+      <div class="main">
+        <div class="container">
+          <div class="row">
+            <ul class="list">
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script>
+      // Select any Element
+
+      jQuery(document).ready(function () {
+        //   consolelog(document.querySelectorAll("p")); Using pure JS
+        console.log(jQuery("ul, form"));
+      });
+
+      // Selecting Children Element
+
+      jQuery(document).ready(function () {
+        jQuery(".extract p:nth-child(2)").css("backgroundColor", "red");
+      });
+
+      // Finding all elements inside the Parent Elemts
+
+      jQuery(document).ready(function () {
+        jQuery(".parent")
+          .children("p, blockquote")
+          .css("backgroundColor", "green");
+      });
+
+      // EQ UnderStanding
+
+      jQuery(document).ready(function () {
+        jQuery(".list").parents().eq(3).css("backgroundColor", "pink");
+      });
+    </script>
   </body>
 </html>
