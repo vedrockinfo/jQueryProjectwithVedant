@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playing with Styles</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div
+        class="element"
+        style="
+          background-color: red;
+          font-size: 48px;
+          padding: 10px 20px;
+          border-radius: 60px;
+          text-align: center;
+          width: 600px;
+        "
+      >
+        JAVASCRIPT PREPARATION
+      </div>
+    </div>
+    <script src="./jquery-3.2.1.min.js"></script>
+    <script>
+      jQuery(document).ready(function () {
+        var element = jQuery(".element");
+        // console.log(jQuery(".element").css("padding"));
+        // console.log(jQuery(".element").css("backgroundColor"));
+        console.log(jQuery(".element").css("fontSize"));
+        // console.log(element.fontSize());
+      });
+    </script>
+  </body>
+</html>
